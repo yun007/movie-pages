@@ -69,7 +69,7 @@
     </div>
 </div>
 <style>
-    .search_wrap{padding:20px}
+    .search_wrap{padding:20px;background:#f2f2f2}
     .result_box{min-height:559px}
     .result_box{margin:50px 0 0}
     .img_box{width:100%}
