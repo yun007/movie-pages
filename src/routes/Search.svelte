@@ -5,7 +5,7 @@
     let searchInfo = [];
 
     function check(){
-     console.log('a')   
+    //  console.log('a')   
      if(this.value.length>0){
          this.value = ''
          keyword = '';
@@ -31,13 +31,13 @@
         })    
     }
     $:{
-        console.log(searchInfo)
+        // console.log(searchInfo)
     }
 </script>
 
 <div class="search_wrap">
     <h1>Movie Sraech</h1>
-    <input type="text" bind:value={keyword} on:click={check}/> <button type="button" disabled={!keyword} on:click={search} >검색</button>
+    <input type="text" bind:value={keyword} on:click={check} placeholder='검색어를 입력하세요.' /> <button type="button" disabled={!keyword} on:click={search} >검색</button>
     <div id="result" class="result_box">
         {#await searchInfo}
         <p>wating....</p>

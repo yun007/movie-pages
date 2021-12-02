@@ -14,14 +14,14 @@
 <Router url="{Url}">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-		  <a class="navbar-brand" href="./Gate">Movie</a>
+		  <a class="navbar-brand" href="/Gate">Movie</a>
 		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarColor01">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item"><Link to="./Gate" class="nav-link active" aria-current="page">Home</Link></li>
-				<li class="nav-item"><Link to="./Search" class="nav-link">Search Movie</Link></li>
+				<li class="nav-item"><Link to="/Gate" class="nav-link active" aria-current="page">Home</Link></li>
+				<li class="nav-item"><Link to="/Search" class="nav-link">Search Movie</Link></li>
 				<!-- <li class="nav-item"><Link to="Sub1" class="nav-link">Sub1</Link></li> -->
 			</ul>
 			<!-- <form class="d-flex">
@@ -34,9 +34,9 @@
 
 
 	<div class='content'>		
-		<Route path="./Search" imgUrl={imgUrl} component="{Search}"></Route>
+		<Route path="Search" imgUrl={imgUrl} component="{Search}"></Route>
 		<!-- <Route path="Sub1" component="{Sub1}"></Route> -->
-		<Route path="./Gate"><Gate imgUrl={imgUrl} /></Route>		
+		<Route path="Gate"><Gate imgUrl={imgUrl} /></Route>		
 	</div>	
 </Router>
 
